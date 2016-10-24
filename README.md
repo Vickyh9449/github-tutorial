@@ -20,6 +20,14 @@ The difference between Git and Github is Git takes snapshots of code and does ne
 
 ---
 ## Initial Setup
+Github Setup
+* To set up a Github account, you would need to go to (www.github.com)
+* Next, you would need to click on Sign up
+* After clicking "Sign up", you would type in your information
+* When done, the email you used to set up the account, go to it and verify your email
+  * If not, Github would suspect you to be a robot and you would have to verify your humanity
+SSH Key
+
 
 
 
