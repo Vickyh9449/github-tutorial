@@ -22,26 +22,26 @@ The difference between Git and Github is Git takes snapshots of code and does re
 ---
 ## Initial Setup
 ##### **Github Setup**
-1. To set up a Github account, you would need to go to (www.github.com)
-2. Next, you would need to click on Sign up
-3. After clicking "Sign up", you would type in your information
-4. When done, the email you used to set up the account, go to it and verify your email
+1. To set up a Github account, you would need to go to [www.github.com](www.github.com)
+2. Next, you would need to click on the "Sign up" button
+3. After clicking "Sign up", you would need to type in your information. You should be using your hstat email and the username and password should be the same one you use for your hstat email.
+4. When done, go to the email you used to set up the account and verify your email
    * If not, Github would suspect you to be a robot and you would have to verify your humanity  
 ##### **SSH Key**
 1. To set up the SSH key, you would need to login to your Github account
-2. Next, on the top right corner, click on your icon
-3. After clicking on your icon, click on "Settings" 
+2. Next, on the top right corner, click on your profile icon
+3. After clicking on your profile icon, click on "Settings" 
 4. When you are in the settings, go to "SSH and GPG Keys"  
 ![Here's a screenshot](https://preview.c9users.io/vickyh9449/github-learning/fork-practice/Screen%20Shot%202016-10-24%20at%208.30.44%20AM.png?_c9_id=livepreview0&_c9_host=https://ide.c9.io)
 5. Next click on new "SSH key" and name it "cloud9"
    * Make sure it's all lower case, the program is case sensitive
 6. After you have done that, switch over to your Cloud9 account and click at the gear icon on the top right corner  
 ![Here's a screenshot](https://preview.c9users.io/vickyh9449/github-learning/fork-practice/Screen%20Shot%202016-10-24%20at%209.26.57%20PM.png)
-7. Once you have clicked on the gear icon, got to "SSH Keys" and copy/paste your SSH key onto Github
-   * It should start with "ssh-rsa"
+7. Once you have clicked on the gear icon, go to "SSH Keys" and copy/paste your SSH key onto Github
+   * It should start with `ssh-rsa`
 8. After that, you would type in `ssh -T git@github.com`
    * The URL is supposed to have your Github username
-9. After that, you have connected your Github account to ur local repo, Cloud 9
+9. After that, you have connected your Github account to your local repo, Cloud 9
 
 ---
 ## Repository Setup
