@@ -49,19 +49,24 @@ To create a repository, there are a number of steps in completing this task.
 1. You must log into your Cloud 9 and Github account and make sure the remote repo (Github) is connected to your local repo (Cloud 9)
    * If not, follow the steps to the Github setup as well as the SSH key setup
 2. When you have completed step 1, go to Cloud 9 and make a new file
-  * You would type in `mkdir file-name` and cd into it
-3. Next you would want to make a text file so you would type the syntax, `touch file text-name` to make the text file
+  * You would type in `mkdir file-name` and `cd file-name` to move into it
+3. Next you would want to make a text file so you would type the syntax, `touch file text-name` to make a new text file
 4. After that, bring your curser to the file you made and you would add any content you want to it. You could type anything and everything.
 5. After doing so, go back down to your bash and now you would want to save those changes
 6. If you want to save your changes, go to your Github account that should be signed in already.
 7. Click on your profile icon and click "New repository"
 8. After that, you would name the repository
-   * Make sure your directory name mathces with the directory name in Cloud 9!! This is the most important part.
+   * Make sure your directory name matches with the directory name in Cloud 9!! This is the most important part.
+   * After creating the new repository, there will appear two lines of code
 9. After doing so, go back to your Cloud 9 and hover over to bash terminal (this is where you type all the code)
 10. In bash, you would first add the file to save the changes, commit it with a message so that it's ready to be in the staging area, and finally pushing it to your remote repository which is Github
-11. To do so, you would first type `git add text-name" 
-12. Then `git commit -m "message to describe what changes/edits you made"`
-13. Finally `git push` to push the changes to Github
+11. To do so, you would first type `git add text-name` 
+12. Then `git commit -m "message to describe what changes/edits you made"` to take a screenshot of the code you have written
+13. Finally go back to Github, copy and paste the two lines of code into the command line  
+```
+git remote add origin git@github.com:[username]/repo-name.git 
+git push -u origin master
+```
 
 
 
