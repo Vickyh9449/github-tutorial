@@ -56,7 +56,7 @@ To create a repository, there are a number of steps in completing this task.
 6. If you want to save your changes, go to your Github account that should be signed in already.
 7. Click on your profile icon and click "New repository"
 8. After that, you would name the repository
-   * Make sure your directory name matches with the directory name in Cloud 9!! This is the most important part.
+   * **Make sure your directory name matches with the directory name in Cloud 9!! This is the most important part.**
    * After creating the new repository, there will appear two lines of code
 9. After doing so, go back to your Cloud 9 and hover over to bash terminal (this is where you type all the code)
 10. In bash, you would first add the file to save the changes, commit it with a message so that it's ready to be in the staging area, and finally pushing it to your remote repository which is Github
@@ -79,5 +79,5 @@ To have your repo running smoothly, you would need to make sure you are adding a
 * To commit changes in a text file, you would use `git commit -m "message on what you edit"`
   * After adding your file, you would need a commit message to signify what you have edited
   * The commit message must be in present tense, short and descriptive
-* To push changes from local repo to remote repo, you would use `git push`
+* To push changes from local repo (your computer) to remote repo (Github), you would use `git push`
 * To check the condition of your file (to see if the file has been committed or not), you would use `git status`
