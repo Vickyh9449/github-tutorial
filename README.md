@@ -12,10 +12,11 @@ _by Vicky Huang_
   * Stores code in a cloud
   * Requires Git
   * Tracks changes in code visually
-  * Is a website (github.com)
+  * Is a website [github.com](https://github.com/)
   * Basic workflow
+  * Allows developers to collaborate easily
 
-The difference between Git and Github is Git takes snapshots of code and does need Github while on the other hand, Github requires Git and stores code in a "cloud".
+The difference between Git and Github is Git takes snapshots of code and does require Github. While on the other hand, Github requires Git and stores code in a "cloud".
 
 
 ---
