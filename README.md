@@ -35,12 +35,12 @@ The difference between Git and Github is Git takes snapshots of code and does re
 ![Here's a screenshot](https://preview.c9users.io/vickyh9449/github-learning/fork-practice/Screen%20Shot%202016-10-24%20at%208.30.44%20AM.png?_c9_id=livepreview0&_c9_host=https://ide.c9.io)
 5. Next click on new "SSH key" and name it "cloud9"
    * Make sure it's all lower case, the program is case sensitive
-6. After you have done that, switch over to your Cloud9 account and click at the gear icon on the top right corner  
+6. After you have done that, switch over to your Cloud9 account and click on the gear icon located on the top right corner  
 ![Here's a screenshot](https://preview.c9users.io/vickyh9449/github-learning/fork-practice/Screen%20Shot%202016-10-24%20at%209.26.57%20PM.png)
 7. Once you have clicked on the gear icon, go to "SSH Keys" and copy/paste your SSH key onto Github
    * It should start with `ssh-rsa`
 8. After that, you would type in `ssh -T git@github.com`
-   * The URL is supposed to have your Github username
+   * The URL is suppose to have your Github username
 9. After that, you have connected your Github account to your local repo, Cloud 9
 
 ---
