@@ -72,12 +72,12 @@ git push -u origin master
 
 ---
 ## Workflow & Commands
-To have your repo running smmothly, you would need to make sure you are adding or commiting files while checking to see if they have been committed. 
+To have your repo running smoothly, you would need to make sure you are adding and commiting the files while making changes to the code. 
 * To add a file, you would use `git add text-name`
-  * This allows your changes in the files to be added in a snapshots
-  * It gets ready to be saved and move onto the staging area
+  * This allows your changes in the files to be added in a snapshot
+  * It gets ready to be saved and move the file onto the staging area
 * To commit changes in a text file, you would use `git commit -m "message on what you edit"`
   * After adding your file, you would need a commit message to signify what you have edited
-  * The commit message must be in present tense
+  * The commit message must be in present tense, short and descriptive
 * To push changes from local repo to remote repo, you would use `git push`
-* To check the condition of your file (to see if it has been committed or not), you would use `git status`
+* To check the condition of your file (to see if the file has been committed or not), you would use `git status`
