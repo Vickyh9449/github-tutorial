@@ -4,18 +4,19 @@ _by Vicky Huang_
 
 ---
 ## Git vs. GitHub
-* Git: is a program in Github
+* Git: is a program in Github that : 
   * Keeps snapshots of the code 
   * Does not require Github
   * Runs on Command Line
-* Github: is a program that has Git in it
-  * Stores code in a cloud
+  * Runs in a local directory which stores changes within c9.io
+* Github: is a program that has Git in it that :
+  * Stores code in a cloud , a remote directory 
   * Requires Git
   * Tracks changes in code visually
   * Is a website (github.com)
   * Basic workflow
 
-The difference between Git and Github is Git takes snapshots of code and does need Github while on the other hand, Github requires Git and stores code in a "cloud".
+The difference between Git and Github is Git takes snapshots of code and runs it on a local directory in c9.io , while on the other hand, Github uses the code from Git and stores it in a "cloud" , which is like storing the code in a remote directory for later viewing .
 
 
 ---
@@ -25,7 +26,7 @@ The difference between Git and Github is Git takes snapshots of code and does ne
 2. Next, you would need to click on Sign up
 3. After clicking "Sign up", you would type in your information
 4. When done, the email you used to set up the account, go to it and verify your email
-   * If not, Github would suspect you to be a robot and you would have to verify your humanity  
+   * If not, Github would suspect you of being a robot and would have you verify your humanity  
 ##### **SSH Key**
 1. To set up the SSH key, you would need to login to your Github account
 2. Next, on the top right corner, click on your icon
@@ -42,6 +43,9 @@ The difference between Git and Github is Git takes snapshots of code and does ne
    * The URL is supposed to have your Github username
 9. After that, you have connected your Github account to ur local repo, Cloud 9
 
+10. This takes away the trouble of having to connect to your git or github through a username and password everytime you log in .
+
+
 ---
 ## Repository Setup
 To create a repository, there are a number of steps in completing this task.
@@ -55,9 +59,9 @@ To create a repository, there are a number of steps in completing this task.
 6. If you want to save your changes, go to your Github account that should be signed in already.
 7. Click on your profile icon and click "New repository"
 8. After that, you would name the repository
-   * Make sure your directory name mathces with the directory name in Cloud 9!! This is the most important part.
+   * Make sure your directory name matches with the directory name in Cloud 9!! This is the most important part.
 9. After doing so, go back to your Cloud 9 and hover over to bash terminal (this is where you type all the code)
-10. In bash, you would first add the file to save the changes, commit it with a message so that it's ready to be in the staging area, and finally pushing it to your remote repository which is Github
+10. In bash, you would first add the file to save the changes within git and push it to the staging area, commit it with a message so that it's ready to be permanently added to your file , and finally push it to your remote repository which is Github so that you can save these changes remotely.
 11. To do so, you would first type `git add text-name" 
 12. Then `git commit -m "message to describe what changes/edits you made"`
 13. Finally `git push` to push the changes to Github
@@ -69,7 +73,7 @@ To create a repository, there are a number of steps in completing this task.
 To have your repo running smmothly, you would need to make sure you are adding or commiting files while checking to see if they have been committed. 
 * To add a file, you would use `git add text-name`
   * This allows your changes in the files to be added in a snapshots
-  * It gets ready to be saved and move onto the staging area
+  * It gets ready to be saved and commited as final changes 
 * To commit changes in a text file, you would use `git commit -m "message on what you edit"`
   * After adding your file, you would need a commit message to signify what you have edited
   * The commit message must be in present tense
