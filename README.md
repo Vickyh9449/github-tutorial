@@ -27,19 +27,16 @@ The difference between Git and Github is Git takes snapshots of code and does re
 ---
 ## Initial Setup
 ##### **Github Setup**
-<<<<<<< HEAD
 1. To set up a Github account, you would need to go to (www.github.com)
 2. Next, you would need to click on Sign up
 3. After clicking "Sign up", you would type in your information
 4. When done, the email you used to set up the account, go to it and verify your email
-   * If not, Github would suspect you of being a robot and would have you verify your humanity  
-=======
+   * If not, Github would suspect you of being a robot and would have you verify your humanity
 1. To set up a Github account, you would need to go to [www.github.com](www.github.com)
 2. Next, you would need to click on the "Sign up" button
 3. After clicking "Sign up", you would need to type in your information. You should be using your hstat email and the username and password should be the same one you use for your hstat email.
 4. When done, go to the email you used to set up the account and verify your email
    * If not, Github would suspect you to be a robot and you would have to verify your humanity  
->>>>>>> 7c43a2601a9f73970e378b805b060e5fea835acf
 ##### **SSH Key**
 1. To set up the SSH key, you would need to login to your Github account
 2. Next, on the top right corner, click on your profile icon
