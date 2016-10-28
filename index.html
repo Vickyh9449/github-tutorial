@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>GitHub-tutorial by Vickyh9449</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/Vickyh9449/github-tutorial">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>GitHub-tutorial</h1>
+            <h2>Let&#39;s Git ready to Git going and learn Git!</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/Vickyh9449/github-tutorial/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/Vickyh9449/github-tutorial/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Vicky Huang</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<ul>
+<li>Git: is a program in Github
+
+<ul>
+<li>Keeps snapshots of code </li>
+<li>Does not require Github</li>
+<li>Runs on Command Line</li>
+</ul>
+</li>
+<li>Github: is a program that has Git in it
+
+<ul>
+<li>Stores code in a cloud</li>
+<li>Requires Git</li>
+<li>Tracks changes in code visually</li>
+<li>Is a website <a href="https://github.com/">github.com</a>
+</li>
+<li>Basic workflow</li>
+<li>Allows developers to collaborate easily</li>
+</ul>
+</li>
+</ul>
+
+<p>The difference between Git and Github is Git takes snapshots of code and does require Github. While on the other hand, Github requires Git and stores code in a "cloud".</p>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h5>
+<a id="github-setup" class="anchor" href="#github-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Github Setup</strong>
+</h5>
+
+<ol>
+<li>To set up a Github account, you would need to go to <a href="www.github.com">www.github.com</a>
+</li>
+<li>Next, you would need to click on the "Sign up" button</li>
+<li>After clicking "Sign up", you would need to type in your information. You should be using your hstat email and the username and password should be the same one you use for your hstat email.</li>
+<li>When done, go to the email you used to set up the account and verify your email
+
+<ul>
+<li>If not, Github would suspect you to be a robot and you would have to verify your humanity<br>
+##### <strong>SSH Key</strong>
+</li>
+</ul>
+</li>
+<li>To set up the SSH key, you would need to login to your Github account</li>
+<li>Next, on the top right corner, click on your profile icon</li>
+<li>After clicking on your profile icon, click on "Settings" </li>
+<li>When you are in the settings, go to "SSH and GPG Keys"<br>
+<img src="https://preview.c9users.io/vickyh9449/github-learning/fork-practice/Screen%20Shot%202016-10-24%20at%208.30.44%20AM.png?_c9_id=livepreview0&amp;_c9_host=https://ide.c9.io" alt="Here's a screenshot">
+</li>
+<li>Next click on new "SSH key" and name it "cloud9"
+
+<ul>
+<li>Make sure it's all lower case, the program is case sensitive</li>
+</ul>
+</li>
+<li>After you have done that, switch over to your Cloud9 account and click on the gear icon located on the top right corner<br>
+<img src="https://preview.c9users.io/vickyh9449/github-learning/fork-practice/Screen%20Shot%202016-10-24%20at%209.26.57%20PM.png" alt="Here's a screenshot">
+</li>
+<li>Once you have clicked on the gear icon, go to "SSH Keys" and copy/paste your SSH key onto Github
+
+<ul>
+<li>It should start with <code>ssh-rsa</code>
+</li>
+</ul>
+</li>
+<li>After that, you would type in <code>ssh -T git@github.com</code>
+
+<ul>
+<li>The URL is suppose to have your Github username</li>
+</ul>
+</li>
+<li>After that, you have connected your Github account to your local repo, Cloud 9</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<p>To create a repository, there are a number of steps in completing this task.
+1. You must log into your Cloud 9 and Github account and make sure the remote repo (Github) is connected to your local repo (Cloud 9)</p>
+
+<ul>
+<li>If not, follow the steps to the Github setup as well as the SSH key setup
+
+<ol>
+<li>When you have completed step 1, go to Cloud 9 and make a new file</li>
+<li>You would type in <code>mkdir file-name</code> and <code>cd file-name</code> to move into it</li>
+<li>Next you would want to make a text file so you would type the syntax, <code>touch file text-name</code> to make a new text file</li>
+<li>After that, bring your curser to the file you made and you would add any content you want to it. You could type anything and everything.</li>
+<li>After doing so, go back down to your bash and now you would want to save those changes</li>
+<li>If you want to save your changes, go to your Github account that should be signed in already.</li>
+<li>Click on your profile icon and click "New repository"</li>
+<li>After that, you would name the repository</li>
+</ol>
+</li>
+<li><strong>Make sure your directory name matches with the directory name in Cloud 9!! This is the most important part.</strong></li>
+<li>After creating the new repository, there will appear two lines of code
+
+<ol>
+<li>After doing so, go back to your Cloud 9 and hover over to bash terminal (this is where you type all the code)</li>
+<li>In bash, you would first add the file to save the changes, commit it with a message so that it's ready to be in the staging area, and finally pushing it to your remote repository which is Github</li>
+<li>To do so, you would first type <code>git add text-name</code> </li>
+<li>Then <code>git commit -m "message to describe what changes/edits you made"</code> to take a screenshot of the code you have written</li>
+<li>Finally go back to Github, copy and paste the two lines of code into the command line<br>
+</li>
+</ol>
+</li>
+</ul>
+
+<pre><code>git remote add origin git@github.com:[username]/repo-name.git 
+git push -u origin master
+</code></pre>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p>To have your repo running smoothly, you would need to make sure you are adding and commiting the files while making changes to the code. </p>
+
+<ul>
+<li>To add a file, you would use <code>git add text-name</code>
+
+<ul>
+<li>This allows your changes in the files to be added in a snapshot</li>
+<li>It gets ready to be saved and move the file onto the staging area</li>
+</ul>
+</li>
+<li>To commit changes in a text file, you would use <code>git commit -m "message on what you edit"</code>
+
+<ul>
+<li>After adding your file, you would need a commit message to signify what you have edited</li>
+<li>The commit message must be in present tense, short and descriptive</li>
+</ul>
+</li>
+<li>To push changes from local repo (your computer) to remote repo (Github), you would use <code>git push</code>
+</li>
+<li>To check the condition of your file (to see if the file has been committed or not), you would use <code>git status</code>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="collaboration" class="anchor" href="#collaboration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Collaboration</h2>
+
+<h4>
+<a id="forking" class="anchor" href="#forking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Forking</h4>
+
+<ul>
+<li>Forking means making a copy of someone else's repo and saving it as their own remote repo</li>
+<li>To fork a user's repo, you would need to log into your Github and Cloud 9 accounts</li>
+<li>After that, go back to Github and go to <a href="https:/github.com/explore">github.com/explore</a> to select a repo that you would like to fork</li>
+<li>After choosing a repo, click on it and click on "fork" at the top right corner<br>
+<img src="https://preview.c9users.io/vickyh9449/github-learning/github-tutorial/Screen%20Shot%202016-10-28%20at%2012.23.26%20AM.png" alt="Here is what to click on">
+</li>
+<li>After forking, you would need to add it to you Cloud 9</li>
+<li>To add it to ur Cloud 9, you would go to Github and click on the green button that says "Clone or Download"<br>
+<img src="https://preview.c9users.io/vickyh9449/github-learning/github-tutorial/Screen%20Shot%202016-10-28%20at%2012.32.00%20AM.png" alt="This is how the button should look like">
+</li>
+<li>After doing that, go back to Cloud 9 and go to your terminal</li>
+<li>In your terminal, type in <code>git clone &lt;URL&gt;</code>
+#### Cloning</li>
+<li>Cloning is basically copying a user's remote repo onto your local repo</li>
+<li>You can do this by selecting any repo you would like to clone, click on "Clone or Download", copy the link, and go back to Github</li>
+<li>In Github, you would go to your bash and type in <code>git clone &lt;URL&gt;</code>
+#### Pull Requests</li>
+<li>A pull request is when you fork someone's repo, make changes, and want the owner of the repo to approve of your changes</li>
+<li>In order for them to see you changes, you need to submit a pull request</li>
+<li>This allows the owner to see what changes you would like to make on their repo</li>
+<li>In order to submit a pull request, the user must fork a repo and make changes to it before submitting a pull request</li>
+<li>After making changes to the forked repo on Cloud 9, the user would then have to go to their Github account and navigate to the forked repo</li>
+<li>After doing so, the user should find a button that says "New Pull Request" or "Create Pull Request"<br>
+<img src="https://preview.c9users.io/vickyh9449/github-learning/github-tutorial/Screen%20Shot%202016-10-28%20at%2012.43.53%20AM.png" alt="Pull Request button"><br>
+After clicking on the button, they would submit their pull request and wait for the owner of the repo to accept
+#### Pull</li>
+<li>When an owner of a repo sees that they have pull requests, they can either accept them or deny them</li>
+<li>If they accept it, they would first have to merge the changes in order to have their new changes seen</li>
+<li>To merge pull requests, you would have to click on Pull Requests on the menu on the top of the screen</li>
+<li>After doing so, they would have to scroll down until they have found a green button that says "Merge Pull Request"</li>
+<li>When found, click on it and your changes and now ready to be pulled into your local repo or Cloud 9. </li>
+<li>To see the changes on Cloud 9, you simply type in <code>git pull</code>
+*Make sure the files to your changes are opened
+
+<h2>
+<a id="-you-can-do-this-by-going-cd-into-it" class="anchor" href="#-you-can-do-this-by-going-cd-into-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* You can do this by going <code>cd</code> into it</h2>
+
+<h2>
+<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshots</h2>
+</li>
+<li>When taking screenshots of code, it allows the viewers to visually see what you have done to be where you are now</li>
+<li>In order to make a screenshot, you must screenshot a part of code of anything from your computer
+
+<ul>
+<li>If you have a Mac, to screenshot, click on Command + Shift + 4</li>
+<li>If you have a PC, use Snipping Tool that should be provided in your laptop</li>
+</ul>
+</li>
+<li>After taking a screenshot, go to Cloud 9 and click on File on the top left corner and then click on "Upload local files"<br>
+<img src="https://preview.c9users.io/vickyh9449/github-learning/github-tutorial/Screen%20Shot%202016-10-28%20at%2012.57.04%20AM.png" alt="Screenshot of menu bar">
+</li>
+<li>After that, uplaod your screenshot and you should see it show up on your file tree on the left</li>
+<li>When you see it, double click it so that it opens</li>
+<li>After doing so, go back to the top menu bar and click on "Preview"</li>
+<li>Under Preview, you should find an option that says "Raw Content of Screenshot..."<br>
+<img src="https://preview.c9users.io/vickyh9449/github-learning/github-tutorial/Screen%20Shot%202016-10-28%20at%201.00.48%20AM.png" alt="Screenshot">
+</li>
+<li>When you see it, click on it and after that, click on the icon that's in the middle or next to "Browser"<br>
+<img src="https://preview.c9users.io/vickyh9449/github-learning/github-tutorial/Screen%20Shot%202016-10-28%20at%201.03.40%20AM.png" alt="Screenshot">
+</li>
+<li>When you have clicked that, copy the link and use the template of adding an exclamation point first, then brackets to describe your screenshot, and parentheses to paste the URL you copied earlier</li>
+<li>After that, you have created your screenshot</li>
+</ul>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/Vickyh9449">Vickyh9449</a> can be found on <a href="https://github.com/Vickyh9449/github-tutorial">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
